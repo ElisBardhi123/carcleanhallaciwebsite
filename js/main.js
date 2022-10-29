@@ -23,6 +23,16 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
+    // Scroll to bottom button
+    $('.btn-custom').click(function () {
+        $('html, body').animate({
+                scrollTop: $(document).height()-$(window).height()},
+            4000,
+            "easeOutQuint"
+        );
+        return false;
+    });
     
     
     // Sticky Navbar
